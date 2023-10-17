@@ -1,0 +1,128 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: Roboto;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.btnFont {
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header .logo {
+  display: flex;
+  justify-content: center;
+  padding: 23px 13px;
+}
+header .input {
+  display: flex;
+  gap: 17px;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  color: #353535;
+  background-color: #EAEAEA;
+  width: 100%;
+}
+header .input input {
+  background-color: inherit;
+  border: none;
+  width: 100px;
+}
+
+.btnExplore {
+  width: 218px;
+  height: 50px;
+  border-radius: 25px;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(0deg, #9356DC, #FF79DA);
+  border: none;
+  text-align: center;
+}
+
+.btnExplore:hover {
+  cursor: pointer;
+}
+
+.explore {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  text-align: center;
+  padding: 45px 0;
+  background-color: #F6F6F6;
+}
+.explore h1 {
+  padding: 0 45px;
+}
+
+/*# sourceMappingURL=main.css.map */

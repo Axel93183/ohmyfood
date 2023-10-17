@@ -1,0 +1,27 @@
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    padding: 23px 13px;
+  }
+  .input {
+    display: flex;
+    gap: 17px;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    color: $dark-grey;
+    background-color: $grey;
+    width: 100%;
+    input {
+      background-color: inherit;
+      border: none;
+      width: 100px;
+    }
+  }
+}
