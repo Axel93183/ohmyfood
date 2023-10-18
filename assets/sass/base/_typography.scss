@@ -5,8 +5,16 @@ body {
   @include font-title;
 }
 
-.subtitle {
+.card-title {
   @include font-subtitle;
+}
+
+.card-subtitle {
+  @include font-text-card;
+}
+
+.explore-text {
+  @include font-text-explore;
 }
 
 .btnFont {

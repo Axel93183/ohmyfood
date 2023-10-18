@@ -5,10 +5,37 @@
 
 @mixin font-subtitle {
   font-size: 18px;
+  font-weight: 700;
+  color: black;
+}
+
+@mixin font-text-explore {
+  font-size: 18px;
   font-weight: 300;
+}
+
+@mixin font-text-card {
+  font-size: 17px;
+  font-weight: 300;
+  color: black;
 }
 
 @mixin font-btn {
   font-size: 16px;
   font-weight: 500;
+}
+
+@mixin font-new {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
 }
