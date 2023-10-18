@@ -1,18 +1,19 @@
-body{
-    font-family: Roboto;
+body {
+  font-family: Roboto;
 }
-.title{
-font-size: 24px;
-font-weight: 700;
-}
-
-.subtitle{
-    font-size: 18px;
-font-weight: 300;
+.title {
+  @include font-title;
 }
 
-.btnFont{
-    font-size: 16px;
-font-weight: 500;
-color: white;
+.subtitle {
+  @include font-subtitle;
+}
+
+.btnFont {
+  @include font-btn;
+  color: white;
+}
+
+.workText {
+  @include font-btn;
 }

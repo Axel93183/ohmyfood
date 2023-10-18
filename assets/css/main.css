@@ -71,6 +71,11 @@ body {
   color: white;
 }
 
+.workText {
+  font-size: 16px;
+  font-weight: 500;
+}
+
 header {
   display: flex;
   flex-direction: column;
@@ -89,7 +94,7 @@ header .input {
   align-items: center;
   height: 50px;
   color: #353535;
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
   width: 100%;
 }
 header .input input {
@@ -119,10 +124,53 @@ header .input input {
   align-items: center;
   text-align: center;
   padding: 45px 0;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
 }
 .explore h1 {
   padding: 0 45px;
+}
+
+.working {
+  padding: 50px 20px 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.working-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding-left: 12px;
+}
+
+.working-step {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  text-align: center;
+  height: 72.379px;
+  border-radius: 20px;
+  background-color: #f6f6f6;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  position: relative;
+  padding-left: 35px;
+}
+.working-step svg {
+  position: absolute;
+  transform: translateX(-200%);
+}
+.working-step i {
+  color: #7e7e7e;
+  font-size: larger;
+}
+.working-step .iStore {
+  color: #9356dc;
+}
+
+.restaurants {
+  background-color: #f6f6f6;
+  height: 200px;
 }
 
 /*# sourceMappingURL=main.css.map */

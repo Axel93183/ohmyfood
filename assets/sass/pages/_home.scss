@@ -1,14 +1,55 @@
-.explore{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;   
-    align-items: center;
-    text-align: center;
-    padding: 45px 0;
-    background-color: $light-grey;
-    h1{
-        padding: 0 45px;
-    }
-   
+.explore {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  text-align: center;
+  padding: 45px 0;
+  background-color: $light-grey;
+  h1 {
+    padding: 0 45px;
+  }
 }
 
+.working {
+  padding: 50px 20px 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.working-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding-left: 12px;
+}
+
+.working-step {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  text-align: center;
+  height: 72.379px;
+  border-radius: 20px;
+  background-color: $light-grey;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  position: relative;
+  padding-left: 35px;
+  svg {
+    position: absolute;
+    transform: translateX(-200%);
+  }
+  i {
+    color: $grey;
+    font-size: larger;
+  }
+  .iStore {
+    color: $purple;
+  }
+}
+
+.restaurants {
+  background-color: $light-grey;
+  height: 200px;
+}
