@@ -1,0 +1,30 @@
+footer {
+  background-color: $dark-grey;
+  @include flex-column;
+  gap: 16px;
+  padding: 22px 25px;
+  color: white;
+  .white-logo {
+    width: 138px;
+    height: 27px;
+    display: block;
+    path {
+      fill: white;
+    }
+  }
+  .footer-items {
+    @include flex-column;
+    gap: 7px;
+    a {
+      @include flex-row;
+      align-items: center;
+      gap: 16px;
+      i {
+        width: 11px;
+      }
+      p {
+        @include font-btn;
+      }
+    }
+  }
+}
