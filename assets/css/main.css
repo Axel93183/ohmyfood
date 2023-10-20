@@ -56,6 +56,10 @@ body {
   font-family: Roboto;
 }
 
+.logo {
+  font-family: Shrikhand;
+}
+
 .title {
   font-size: 24px;
   font-weight: 700;
@@ -90,13 +94,14 @@ body {
 header {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
-header .logo {
-  display: flex;
-  justify-content: center;
-  padding: 23px 13px;
+header .logo-header {
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+  padding: 23px 0;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  position: relative;
 }
 header .input {
   display: flex;
@@ -122,18 +127,25 @@ footer {
   padding: 22px 25px;
   color: white;
 }
-footer .white-logo {
-  width: 138px;
-  height: 27px;
-  display: block;
+@media (min-width: 1280px) {
+  footer {
+    flex-direction: row-reverse;
+    gap: 32px;
+    padding: 60px 25px 30px;
+  }
 }
-footer .white-logo path {
-  fill: white;
+footer .logo-footer {
+  font-size: 18px;
+  font-weight: 400;
+  margin-right: 30px;
 }
 footer .footer-items {
   display: flex;
   flex-direction: column;
   gap: 7px;
+}
+footer .footer-items li:nth-child(2n) {
+  margin-right: 30px;
 }
 footer .footer-items a {
   display: flex;
@@ -148,13 +160,19 @@ footer .footer-items a p {
   font-size: 16px;
   font-weight: 500;
 }
+@media (min-width: 1280px) {
+  footer .footer-items {
+    flex-direction: row;
+    gap: 14px;
+  }
+}
 
 .btnExplore {
   width: 218px;
   height: 50px;
   border-radius: 25px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-  background: linear-gradient(0deg, #9356DC, #FF79DA);
+  background: linear-gradient(0deg, #9356dc, #ff79da);
   border: none;
   text-align: center;
 }
@@ -167,6 +185,13 @@ footer .footer-items a p {
   display: flex;
   flex-direction: column;
   gap: 18px;
+}
+@media (min-width: 1280px) {
+  .restaurants-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px 100px;
+  }
 }
 .restaurants-cards .card {
   background-color: white;
@@ -185,7 +210,7 @@ footer .footer-items a p {
 }
 .restaurants-cards .card .card-image .badge {
   position: absolute;
-  left: 72%;
+  right: 15px;
   top: 12px;
   width: 80px;
   height: 29px;
@@ -204,6 +229,7 @@ footer .footer-items a p {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 .restaurants-cards .card .card-content h3,
 .restaurants-cards .card .card-content p {
@@ -225,6 +251,14 @@ footer .footer-items a p {
 .explore h1 {
   padding: 0 45px;
 }
+.explore .explore-text {
+  padding: 0 30px;
+}
+@media (min-width: 1280px) {
+  .explore {
+    padding: 30px 0;
+  }
+}
 
 .working {
   padding: 50px 20px 70px;
@@ -232,12 +266,24 @@ footer .footer-items a p {
   flex-direction: column;
   gap: 25px;
 }
+@media (min-width: 1280px) {
+  .working {
+    padding: 50px 180px;
+  }
+}
 
 .working-container {
   display: flex;
   flex-direction: column;
   gap: 25px;
   padding-left: 12px;
+}
+@media (min-width: 1280px) {
+  .working-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 36.51px;
+  }
 }
 
 .working-step {
@@ -252,9 +298,17 @@ footer .footer-items a p {
   position: relative;
   padding-left: 35px;
 }
-.working-step svg {
+.working-step .step-number {
+  background-color: #9356dc;
+  color: white;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
-  transform: translateX(-200%);
+  left: -12px;
 }
 .working-step i {
   color: #7e7e7e;
@@ -270,6 +324,11 @@ footer .footer-items a p {
   display: flex;
   flex-direction: column;
   gap: 28px;
+}
+@media (min-width: 1280px) {
+  .restaurants {
+    padding: 30px 180px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

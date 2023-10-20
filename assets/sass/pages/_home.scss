@@ -6,8 +6,17 @@
   text-align: center;
   padding: 45px 0;
   background-color: $light-grey;
+
   h1 {
     padding: 0 45px;
+  }
+
+  .explore-text {
+    padding: 0 30px;
+  }
+
+  @media (min-width: 1280px) {
+    padding: 30px 0;
   }
 }
 
@@ -16,6 +25,9 @@
   display: flex;
   flex-direction: column;
   gap: 25px;
+  @media (min-width: 1280px) {
+    padding: 50px 180px;
+  }
 }
 
 .working-container {
@@ -23,6 +35,11 @@
   flex-direction: column;
   gap: 25px;
   padding-left: 12px;
+  @media (min-width: 1280px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 36.51px;
+  }
 }
 
 .working-step {
@@ -36,14 +53,25 @@
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   position: relative;
   padding-left: 35px;
-  svg {
+
+  .step-number {
+    background-color: $purple;
+    color: white;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
-    transform: translateX(-200%);
+    left: -12px;
   }
+
   i {
     color: $grey;
     font-size: larger;
   }
+
   .iStore {
     color: $purple;
   }
@@ -54,4 +82,7 @@
   background-color: $light-grey;
   @include flex-column;
   gap: 28px;
+  @media (min-width: 1280px) {
+    padding: 30px 180px;
+  }
 }

@@ -8,6 +8,16 @@
   font-weight: 700;
 }
 
+@mixin font-large-logo {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+@mixin font-small-logo {
+  font-size: 18px;
+  font-weight: 400;
+}
+
 @mixin font-text-explore {
   font-size: 18px;
   font-weight: 300;

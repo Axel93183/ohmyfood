@@ -1,11 +1,19 @@
 .restaurants-cards {
   @include flex-column;
   gap: 18px;
+  @media (min-width: 1280px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px 100px;
+  }
+
   .card {
     background-color: white;
     border-radius: 20px;
+
     .card-image {
       position: relative;
+
       img {
         object-fit: cover;
         width: 100%;
@@ -14,9 +22,10 @@
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
       }
+
       .badge {
         position: absolute;
-        left: 72%;
+        right: 15px;
         top: 12px;
         width: 80px;
         height: 29px;
@@ -30,14 +39,18 @@
         color: $dark-green;
       }
     }
+
     .card-content {
       padding: 13px;
       @include flex-row;
       justify-content: space-between;
+      align-items: center;
+
       h3,
       p {
         margin-bottom: 5px;
       }
+
       .card-like {
         padding-right: 12px;
       }

@@ -1,14 +1,15 @@
 header {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 
-  .logo {
-    display: flex;
-    justify-content: center;
-    padding: 23px 13px;
+  .logo-header {
+    @include font-large-logo;
+    text-align: center;
+    padding: 23px 0;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+    position: relative;
   }
+
   .input {
     display: flex;
     gap: 17px;
@@ -18,6 +19,7 @@ header {
     color: $dark-grey;
     background-color: $soft-grey;
     width: 100%;
+
     input {
       background-color: inherit;
       border: none;

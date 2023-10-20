@@ -1,6 +1,11 @@
 body {
-  font-family: Roboto;
+  font-family: $text-font-family;
 }
+
+.logo {
+  font-family: $logo-font-family;
+}
+
 .title {
   @include font-title;
 }
