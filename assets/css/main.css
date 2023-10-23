@@ -369,6 +369,12 @@ main img {
   gap: 40px;
   background-color: #f6f6f6;
 }
+@media (min-width: 1280px) {
+  .main-restaurant {
+    margin: 0 192px;
+    padding: 50px 180px 40px;
+  }
+}
 .main-restaurant .restaurant-name {
   display: flex;
   flex-direction: row;
@@ -376,6 +382,12 @@ main img {
 }
 .main-restaurant .restaurant-name svg {
   padding-right: 25px;
+}
+@media (min-width: 1280px) {
+  .main-restaurant .restaurant-name {
+    justify-content: center;
+    gap: 22px;
+  }
 }
 .main-restaurant .restaurant-menu {
   display: flex;

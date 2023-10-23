@@ -15,11 +15,21 @@ main img {
   gap: 40px;
   background-color: $light-grey;
 
+  @media (min-width: 1280px) {
+    margin: 0 192px;
+    padding: 50px 180px 40px;
+  }
+
   .restaurant-name {
     @include flex-row;
     justify-content: space-between;
     svg {
       padding-right: 25px;
+    }
+
+    @media (min-width: 1280px){
+      justify-content: center;
+      gap: 22px;
     }
   }
 
