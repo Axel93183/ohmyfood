@@ -26,4 +26,20 @@ header {
       width: 100px;
     }
   }
+
+  .header-restaurant {
+    @include flex-row;
+    padding: 23px 17px;
+    justify-content: center;
+
+    .logo {
+      @include font-large-logo;
+    }
+
+    i {
+      position: absolute;
+      left: 23px;
+      font-size: 30px;
+    }
+  }
 }

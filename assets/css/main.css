@@ -91,6 +91,11 @@ body {
   font-weight: 500;
 }
 
+.restaurant-title {
+  font-size: 28px;
+  font-weight: 400;
+}
+
 header {
   display: flex;
   flex-direction: column;
@@ -117,6 +122,21 @@ header .input input {
   background-color: inherit;
   border: none;
   width: 100px;
+}
+header .header-restaurant {
+  display: flex;
+  flex-direction: row;
+  padding: 23px 17px;
+  justify-content: center;
+}
+header .header-restaurant .logo {
+  font-size: 30px;
+  font-weight: 400;
+}
+header .header-restaurant i {
+  position: absolute;
+  left: 23px;
+  font-size: 30px;
 }
 
 footer {
@@ -329,6 +349,37 @@ footer .footer-items a p {
   .restaurants {
     padding: 30px 180px;
   }
+}
+
+main img {
+  width: 100%;
+  object-fit: cover;
+  height: 275px;
+}
+
+.main-restaurant {
+  position: relative;
+  top: -50px;
+  z-index: 1;
+  padding: 40px 15px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  background-color: #f6f6f6;
+}
+.main-restaurant .title-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.main-restaurant .title-page svg {
+  padding-right: 25px;
+}
+.main-restaurant .order {
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=main.css.map */

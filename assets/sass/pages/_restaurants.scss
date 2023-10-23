@@ -1,0 +1,30 @@
+main img {
+  width: 100%;
+  object-fit: cover;
+  height: 275px;
+}
+
+.main-restaurant {
+  position: relative;
+  top: -50px;
+  z-index: 1;
+  padding: 40px 15px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  @include flex-column;
+  gap: 40px;
+  background-color: $light-grey;
+
+  .title-page {
+    @include flex-row;
+    justify-content: space-between;
+    svg {
+      padding-right: 25px;
+    }
+  }
+
+  .order {
+    display: flex;
+    justify-content: center;
+  }
+}

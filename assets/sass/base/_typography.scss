@@ -30,3 +30,7 @@ body {
 .workText {
   @include font-btn;
 }
+
+.restaurant-title {
+  @include font-restaurant-title;
+}
