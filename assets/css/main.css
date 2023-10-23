@@ -239,7 +239,7 @@ footer .footer-items a p {
   justify-content: center;
   background-color: #99e2d0;
   border-radius: 2px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
   font-size: 14px;
   font-weight: 500;
   color: #008766;
@@ -314,7 +314,7 @@ footer .footer-items a p {
   height: 72.379px;
   border-radius: 20px;
   background-color: #f6f6f6;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   position: relative;
   padding-left: 35px;
 }
@@ -369,13 +369,66 @@ main img {
   gap: 40px;
   background-color: #f6f6f6;
 }
-.main-restaurant .title-page {
+.main-restaurant .restaurant-name {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.main-restaurant .title-page svg {
+.main-restaurant .restaurant-name svg {
   padding-right: 25px;
+}
+.main-restaurant .restaurant-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.main-restaurant .restaurant-menu .menu-title {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+.main-restaurant .restaurant-menu .menu-title h2 {
+  font-size: 16px;
+  font-weight: 300;
+}
+.main-restaurant .restaurant-menu .menu-title span {
+  display: block;
+  width: 40px;
+  border-bottom: solid 3px #99e2d0;
+}
+.main-restaurant .restaurant-menu .menu-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.main-restaurant .restaurant-menu .menu-cards .card-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+}
+.main-restaurant .restaurant-menu .menu-cards .card-item .item-content {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.main-restaurant .restaurant-menu .menu-cards .card-item .item-content h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+.main-restaurant .restaurant-menu .menu-cards .card-item .item-content p {
+  font-size: 15px;
+  font-weight: 300;
+}
+.main-restaurant .restaurant-menu .menu-cards .card-item .item-price {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-size: 15px;
+  font-weight: 700;
 }
 .main-restaurant .order {
   display: flex;

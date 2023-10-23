@@ -15,11 +15,62 @@ main img {
   gap: 40px;
   background-color: $light-grey;
 
-  .title-page {
+  .restaurant-name {
     @include flex-row;
     justify-content: space-between;
     svg {
       padding-right: 25px;
+    }
+  }
+
+  .restaurant-menu {
+    @include flex-column;
+    gap: 12px;
+
+    .menu-title {
+      @include flex-column;
+      gap: 9px;
+
+      h2 {
+        @include font-restaurant-subtitle;
+      }
+
+      span {
+        display: block;
+        width: 40px;
+        border-bottom: solid 3px $light-green;
+      }
+    }
+
+    .menu-cards {
+      @include flex-column;
+      gap: 12px;
+      .card-item {
+        @include flex-row;
+        justify-content: space-between;
+        padding: 15px;
+        background-color: white;
+        border-radius: 15px;
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+
+        .item-content {
+          @include flex-column;
+          gap: 7px;
+
+          h3 {
+            @include font-item-title;
+          }
+          p {
+            @include font-item-content;
+          }
+        }
+
+        .item-price {
+          @include flex-column;
+          justify-content: flex-end;
+          @include font-item-price;
+        }
+      }
     }
   }
 
