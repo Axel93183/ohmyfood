@@ -23,8 +23,18 @@ main img {
   .restaurant-name {
     @include flex-row;
     justify-content: space-between;
-    svg {
-      padding-right: 25px;
+
+    .card-like{
+      cursor: pointer;
+
+      input[type="checkbox"]:checked + svg path{
+        fill: none;
+        stroke: black;
+      }
+  
+      input[type="checkbox"] {
+        display: none;
+       }
     }
 
     @media (min-width: 1280px){

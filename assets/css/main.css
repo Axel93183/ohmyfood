@@ -256,7 +256,14 @@ footer .footer-items a p {
   margin-bottom: 5px;
 }
 .restaurants-cards .card .card-content .card-like {
-  padding-right: 12px;
+  cursor: pointer;
+}
+.restaurants-cards .card .card-content .card-like input[type=checkbox]:checked + svg path {
+  fill: none;
+  stroke: black;
+}
+.restaurants-cards .card .card-content .card-like input[type=checkbox] {
+  display: none;
 }
 
 .explore {
@@ -380,8 +387,15 @@ main img {
   flex-direction: row;
   justify-content: space-between;
 }
-.main-restaurant .restaurant-name svg {
-  padding-right: 25px;
+.main-restaurant .restaurant-name .card-like {
+  cursor: pointer;
+}
+.main-restaurant .restaurant-name .card-like input[type=checkbox]:checked + svg path {
+  fill: none;
+  stroke: black;
+}
+.main-restaurant .restaurant-name .card-like input[type=checkbox] {
+  display: none;
 }
 @media (min-width: 1280px) {
   .main-restaurant .restaurant-name {
