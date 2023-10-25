@@ -24,20 +24,20 @@ main img {
     @include flex-row;
     justify-content: space-between;
 
-    .card-like{
+    .card-like {
       cursor: pointer;
 
-      input[type="checkbox"]:checked + svg path{
+      input[type="checkbox"]:checked + svg path {
         fill: none;
         stroke: black;
       }
-  
+
       input[type="checkbox"] {
         display: none;
-       }
+      }
     }
 
-    @media (min-width: 1280px){
+    @media (min-width: 1280px) {
       justify-content: center;
       gap: 22px;
     }
@@ -65,31 +65,97 @@ main img {
     .menu-cards {
       @include flex-column;
       gap: 12px;
-      .card-item {
+
+      .item-label {
+        cursor: pointer;
+        flex: 1;
         @include flex-row;
-        justify-content: space-between;
-        padding: 15px;
-        background-color: white;
-        border-radius: 15px;
-        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+        input[type="checkbox"] {
+          display: none;
+        }
 
-        .item-content {
-          @include flex-column;
-          gap: 7px;
+        .card-item {
+          flex: 1;
+          @include flex-row;
+          justify-content: space-between;
+          padding: 15px;
+          background-color: white;
+          border-radius: 15px;
+          box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
 
-          h3 {
-            @include font-item-title;
+          .item-content {
+            @include flex-column;
+            gap: 7px;
+
+            h3 {
+              @include font-item-title;
+            }
+
+            p {
+              @include font-item-content;
+            }
           }
-          p {
-            @include font-item-content;
+
+          .item-price {
+            @include flex-column;
+            justify-content: flex-end;
+            @include font-item-price;
           }
         }
 
-        .item-price {
-          @include flex-column;
-          justify-content: flex-end;
-          @include font-item-price;
+        .item-checked {
+          background-color: $light-green;
+          @include flex-row;
+          justify-content: center;
+          align-items: center;
+          width: 0;
+          transition: width 0.2s;
+          border-top-right-radius: 15px;
+          border-bottom-right-radius: 15px;
+          i {
+            display: none;
+          }
         }
+
+        input[type="checkbox"]:checked + .card-item {
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0;
+        }
+
+        input[type="checkbox"]:checked + .card-item + .item-checked {
+          background-color: $light-green;
+          @include flex-row;
+          justify-content: center;
+          align-items: center;
+          width: 60px;
+          transition: width 0.2s;
+          border-top-right-radius: 15px;
+          border-bottom-right-radius: 15px;
+
+          i {
+            display: block;
+            font-size: 12px;
+            font-weight: bolder;
+            padding: 4px;
+            background-color: white;
+            border-radius: 50%;
+            color: $light-green;
+          }
+        }
+
+        // input[type="checkbox"]:not(:checked) + .card-item{
+        //   width: 100%;
+        //   transition: width 3s;
+        // }
+
+        // input[type="checkbox"]:not(:checked) + .card-item + .item-checked {
+        //   width: 0;
+        //   transition: width 0.4s ease;
+        //   overflow: hidden;
+        //   i {
+        //     display: none;
+        //   }
+        // }
       }
     }
   }
