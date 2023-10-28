@@ -436,32 +436,44 @@ main .main-restaurant .restaurant-menu .menu-cards .item-label {
   flex: 1;
   display: flex;
   flex-direction: row;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+  background-color: white;
 }
 main .main-restaurant .restaurant-menu .menu-cards .item-label input[type=checkbox] {
   display: none;
 }
 main .main-restaurant .restaurant-menu .menu-cards .item-label .card-item {
-  flex: 1;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 15px;
-  background-color: white;
-  border-radius: 15px;
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  width: 100%;
+  transition: width 0.4s;
 }
 main .main-restaurant .restaurant-menu .menu-cards .item-label .card-item .item-content {
   display: flex;
   flex-direction: column;
   gap: 7px;
+  overflow: hidden;
+  margin-right: 15px;
 }
 main .main-restaurant .restaurant-menu .menu-cards .item-label .card-item .item-content h3 {
   font-size: 18px;
   font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 main .main-restaurant .restaurant-menu .menu-cards .item-label .card-item .item-content p {
   font-size: 15px;
   font-weight: 300;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 main .main-restaurant .restaurant-menu .menu-cards .item-label .card-item .item-price {
   display: flex;
@@ -476,30 +488,13 @@ main .main-restaurant .restaurant-menu .menu-cards .item-label .item-checked {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 0;
-  transition: width 0.2s;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
+  width: 60px;
+  position: absolute;
+  right: -60px;
+  height: 100%;
+  transition: right 0.4s;
 }
 main .main-restaurant .restaurant-menu .menu-cards .item-label .item-checked i {
-  display: none;
-}
-main .main-restaurant .restaurant-menu .menu-cards .item-label input[type=checkbox]:checked + .card-item {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-main .main-restaurant .restaurant-menu .menu-cards .item-label input[type=checkbox]:checked + .card-item + .item-checked {
-  background-color: #99e2d0;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 60px;
-  transition: width 0.2s;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-}
-main .main-restaurant .restaurant-menu .menu-cards .item-label input[type=checkbox]:checked + .card-item + .item-checked i {
   display: block;
   font-size: 12px;
   font-weight: bolder;
@@ -507,6 +502,14 @@ main .main-restaurant .restaurant-menu .menu-cards .item-label input[type=checkb
   background-color: white;
   border-radius: 50%;
   color: #99e2d0;
+}
+main .main-restaurant .restaurant-menu .menu-cards .item-label input[type=checkbox]:checked + .card-item {
+  width: calc(100% - 60px);
+  transition: width 0.4s;
+}
+main .main-restaurant .restaurant-menu .menu-cards .item-label input[type=checkbox]:checked + .card-item + .item-checked {
+  right: 0px;
+  transition: right 0.4s;
 }
 main .main-restaurant .order {
   display: flex;
