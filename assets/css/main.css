@@ -402,6 +402,23 @@ main .main-restaurant .restaurant-name {
     gap: 22px;
   }
 }
+@keyframes menuAnimation {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+main .main-restaurant .menu-entrees {
+  animation: menuAnimation 0.3s ease forwards;
+}
+main .main-restaurant .menu-plats {
+  animation: menuAnimation 0.6s ease forwards;
+}
+main .main-restaurant .menu-desserts {
+  animation: menuAnimation 0.9s ease forwards;
+}
 main .main-restaurant .restaurant-menu {
   display: flex;
   flex-direction: column;
