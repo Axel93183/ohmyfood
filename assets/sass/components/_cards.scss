@@ -50,19 +50,6 @@
       p {
         margin-bottom: 5px;
       }
-
-      .card-like {
-        cursor: pointer;
-
-        input[type="checkbox"]:checked + svg path {
-          fill: none;
-          stroke: black;
-        }
-
-        input[type="checkbox"] {
-          display: none;
-        }
-      }
     }
   }
 }

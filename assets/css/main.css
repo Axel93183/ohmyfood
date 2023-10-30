@@ -205,6 +205,20 @@ footer .footer-items a p {
   transition: background 0.3s ease-out, box-shadow 0.3s ease-out;
 }
 
+.btnLike {
+  cursor: pointer;
+}
+.btnLike input[type=checkbox]:checked + svg path {
+  fill: url(#linear_gradient);
+}
+.btnLike input[type=checkbox] {
+  display: none;
+}
+.btnLike input[type=checkbox]:not(:checked) + svg path {
+  fill: none;
+  stroke: black;
+}
+
 .restaurants-cards {
   display: flex;
   flex-direction: column;
@@ -258,16 +272,6 @@ footer .footer-items a p {
 .restaurants-cards .card .card-content h3,
 .restaurants-cards .card .card-content p {
   margin-bottom: 5px;
-}
-.restaurants-cards .card .card-content .card-like {
-  cursor: pointer;
-}
-.restaurants-cards .card .card-content .card-like input[type=checkbox]:checked + svg path {
-  fill: none;
-  stroke: black;
-}
-.restaurants-cards .card .card-content .card-like input[type=checkbox] {
-  display: none;
 }
 
 .explore {
@@ -391,19 +395,6 @@ main .main-restaurant .restaurant-name {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
-main .main-restaurant .restaurant-name .card-like {
-  cursor: pointer;
-}
-main .main-restaurant .restaurant-name .card-like input[type=checkbox]:checked + svg path {
-  fill: url(#linear_gradient);
-}
-main .main-restaurant .restaurant-name .card-like input[type=checkbox] {
-  display: none;
-}
-main .main-restaurant .restaurant-name .card-like input[type=checkbox]:not(:checked) + svg path {
-  fill: none;
-  stroke: black;
 }
 @media (min-width: 1280px) {
   main .main-restaurant .restaurant-name {

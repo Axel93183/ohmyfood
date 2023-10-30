@@ -28,23 +28,6 @@ main {
       @include flex-row;
       justify-content: space-between;
 
-      .card-like {
-        cursor: pointer;
-
-        input[type="checkbox"]:checked + svg path {
-          fill: url(#linear_gradient);
-        }
-
-        input[type="checkbox"] {
-          display: none;
-        }
-
-        input[type="checkbox"]:not(:checked) + svg path {
-          fill: none;
-          stroke: black;
-        }
-      }
-
       @media (min-width: 1280px) {
         justify-content: center;
         gap: 22px;

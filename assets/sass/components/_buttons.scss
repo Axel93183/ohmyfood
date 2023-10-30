@@ -22,3 +22,20 @@
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
   transition: background 0.3s ease-out, box-shadow 0.3s ease-out;
 }
+
+.btnLike {
+  cursor: pointer;
+
+  input[type="checkbox"]:checked + svg path {
+    fill: url(#linear_gradient);
+  }
+
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  input[type="checkbox"]:not(:checked) + svg path {
+    fill: none;
+    stroke: black;
+  }
+}
