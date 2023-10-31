@@ -479,21 +479,17 @@ main .main-restaurant .menu-desserts {
 main .main-restaurant .restaurant-menu {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-}
-main .main-restaurant .restaurant-menu .menu-title {
-  display: flex;
-  flex-direction: column;
   gap: 9px;
 }
-main .main-restaurant .restaurant-menu .menu-title h2 {
+main .main-restaurant .restaurant-menu h2 {
   font-size: 16px;
   font-weight: 300;
 }
-main .main-restaurant .restaurant-menu .menu-title span {
+main .main-restaurant .restaurant-menu span {
   display: block;
   width: 40px;
   border-bottom: solid 3px #99e2d0;
+  margin-bottom: 3px;
 }
 main .main-restaurant .restaurant-menu .menu-cards {
   display: flex;
@@ -586,6 +582,10 @@ main .main-restaurant .restaurant-menu .menu-cards .item-label input[type=checkb
 main .main-restaurant .order {
   display: flex;
   justify-content: center;
+}
+main .main-restaurant .order h2 {
+  visibility: hidden;
+  width: 0;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -57,21 +57,17 @@ main {
 
     .restaurant-menu {
       @include flex-column;
-      gap: 12px;
+      gap: 9px;
 
-      .menu-title {
-        @include flex-column;
-        gap: 9px;
+      h2 {
+        @include font-restaurant-subtitle;
+      }
 
-        h2 {
-          @include font-restaurant-subtitle;
-        }
-
-        span {
-          display: block;
-          width: 40px;
-          border-bottom: solid 3px $light-green;
-        }
+      span {
+        display: block;
+        width: 40px;
+        border-bottom: solid 3px $light-green;
+        margin-bottom: 3px;
       }
 
       .menu-cards {
@@ -165,6 +161,11 @@ main {
     .order {
       display: flex;
       justify-content: center;
+
+      h2 {
+        visibility: hidden;
+        width: 0;
+      }
     }
   }
 }
