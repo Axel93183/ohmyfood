@@ -39,3 +39,13 @@
     stroke: black;
   }
 }
+
+.order {
+  display: flex;
+  justify-content: center;
+
+  h2 {
+    visibility: hidden;
+    width: 0;
+  }
+}
