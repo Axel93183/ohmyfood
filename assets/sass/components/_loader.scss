@@ -17,7 +17,7 @@
   opacity: 1; /* Définit l'opacité de l'élément à 1 (complètement opaque) */
   z-index: 1;
   pointer-events: none; /* Désactive les événements de pointer (comme les clics) sur l'élément */
-  animation: fadeOut 0.5s forwards 3s; /* Applique l'animation "fadeOut" en 0.5 secondes, en conservant "forwards" son état après l'animation pendant 3 secondes */
+  animation: fadeOut 0.5s forwards 1.5s; /* Applique l'animation "fadeOut" en 0.5 secondes, en conservant "forwards" son état après l'animation pendant 1.5 secondes */
 
   #logo-loader {
     @include flex-row;

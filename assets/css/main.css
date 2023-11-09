@@ -289,8 +289,19 @@ footer .footer-items a p {
   flex-direction: column;
   gap: 12px;
 }
-.menu-cards .item-label {
+.menu-cards .item-menu {
+  position: relative;
+}
+.menu-cards .item-menu label {
   cursor: pointer;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+.menu-cards .item-menu .item-label {
   flex: 1;
   display: flex;
   flex-direction: row;
@@ -300,10 +311,10 @@ footer .footer-items a p {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
   background-color: white;
 }
-.menu-cards .item-label input[type=checkbox] {
+.menu-cards .item-menu .item-label input[type=checkbox] {
   display: none;
 }
-.menu-cards .item-label .card-item {
+.menu-cards .item-menu .item-label .card-item {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -312,14 +323,14 @@ footer .footer-items a p {
   width: 100%;
   transition: width 0.4s;
 }
-.menu-cards .item-label .card-item .item-content {
+.menu-cards .item-menu .item-label .card-item .item-content {
   display: flex;
   flex-direction: column;
   gap: 5px;
   overflow: hidden;
   margin-right: 15px;
 }
-.menu-cards .item-label .card-item .item-content h3 {
+.menu-cards .item-menu .item-label .card-item .item-content h3 {
   font-size: 18px;
   font-weight: 500;
   white-space: nowrap;
@@ -327,7 +338,7 @@ footer .footer-items a p {
   text-overflow: ellipsis;
   height: 21px;
 }
-.menu-cards .item-label .card-item .item-content p {
+.menu-cards .item-menu .item-label .card-item .item-content p {
   font-size: 15px;
   font-weight: 300;
   white-space: nowrap;
@@ -335,7 +346,7 @@ footer .footer-items a p {
   text-overflow: ellipsis;
   height: 18px;
 }
-.menu-cards .item-label .card-item .item-price {
+.menu-cards .item-menu .item-label .card-item .item-price {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -343,7 +354,7 @@ footer .footer-items a p {
   font-weight: 700;
   height: 41px;
 }
-.menu-cards .item-label .item-checked {
+.menu-cards .item-menu .item-label .item-checked {
   background-color: #99e2d0;
   display: flex;
   flex-direction: row;
@@ -355,7 +366,7 @@ footer .footer-items a p {
   height: 100%;
   transition: right 0.4s;
 }
-.menu-cards .item-label .item-checked i {
+.menu-cards .item-menu .item-label .item-checked i {
   display: block;
   font-size: 12px;
   font-weight: bolder;
@@ -364,11 +375,11 @@ footer .footer-items a p {
   border-radius: 50%;
   color: #99e2d0;
 }
-.menu-cards .item-label input[type=checkbox]:checked + .card-item {
+.menu-cards .item-menu .item-label input[type=checkbox]:checked + .card-item {
   width: calc(100% - 60px);
   transition: width 0.4s;
 }
-.menu-cards .item-label input[type=checkbox]:checked + .card-item + .item-checked {
+.menu-cards .item-menu .item-label input[type=checkbox]:checked + .card-item + .item-checked {
   right: 0px;
   transition: right 0.4s;
 }
@@ -388,7 +399,7 @@ footer .footer-items a p {
   opacity: 1; /* Définit l'opacité de l'élément à 1 (complètement opaque) */
   z-index: 1;
   pointer-events: none; /* Désactive les événements de pointer (comme les clics) sur l'élément */
-  animation: fadeOut 0.5s forwards 3s; /* Applique l'animation "fadeOut" en 0.5 secondes, en conservant "forwards" son état après l'animation pendant 3 secondes */
+  animation: fadeOut 0.5s forwards 1.5s; /* Applique l'animation "fadeOut" en 0.5 secondes, en conservant "forwards" son état après l'animation pendant 1.5 secondes */
 }
 .loader-container #logo-loader {
   display: flex;
