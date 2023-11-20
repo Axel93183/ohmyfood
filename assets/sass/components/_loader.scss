@@ -23,16 +23,16 @@
     @include flex-row;
     justify-content: center;
     align-items: center;
-    gap: 38px;
   }
 
   i {
-    font-size: 30px;
+    font-size: 24px;
     color: $soft-grey;
   }
 
   p {
-    @include font-large-logo;
+    @include font-title;
+    padding: 0 5px;
   }
 }
 
