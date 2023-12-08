@@ -26,17 +26,30 @@
 .btnLike {
   cursor: pointer;
 
-  input[type="checkbox"]:checked + svg path {
+  input[type="checkbox"] + svg path:first-of-type {
     fill: url(#linear_gradient);
+    stroke: none;
+    opacity: 0%;
+  }
+
+  input[type="checkbox"]:checked + svg path:first-of-type {
+    opacity: 100%;
+    transition: opacity 1s ease-in-out;
+  }
+
+  input[type="checkbox"] + svg path:last-of-type {
+    fill: none;
+    stroke: black;
+    opacity: 100%;
+  }
+
+  input[type="checkbox"]:checked + svg path:last-of-type {
+    opacity: 0%;
+    transition: opacity 1.5s ease-in-out;
   }
 
   input[type="checkbox"] {
     display: none;
-  }
-
-  input[type="checkbox"]:not(:checked) + svg path {
-    fill: none;
-    stroke: black;
   }
 }
 
