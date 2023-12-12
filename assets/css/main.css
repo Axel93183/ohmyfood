@@ -213,6 +213,7 @@ footer .footer-items a p {
   fill: url(#linear_gradient);
   stroke: none;
   opacity: 0%;
+  transition: opacity 1s ease-in-out;
 }
 .btnLike input[type=checkbox]:checked + svg path:first-of-type {
   opacity: 100%;
@@ -222,6 +223,7 @@ footer .footer-items a p {
   fill: none;
   stroke: black;
   opacity: 100%;
+  transition: opacity 1.5s ease-in-out;
 }
 .btnLike input[type=checkbox]:checked + svg path:last-of-type {
   opacity: 0%;

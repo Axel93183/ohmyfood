@@ -30,6 +30,8 @@
     fill: url(#linear_gradient);
     stroke: none;
     opacity: 0%;
+    transition: opacity 1s ease-in-out;
+
   }
 
   input[type="checkbox"]:checked + svg path:first-of-type {
@@ -41,6 +43,8 @@
     fill: none;
     stroke: black;
     opacity: 100%;
+    transition: opacity 1.5s ease-in-out;
+
   }
 
   input[type="checkbox"]:checked + svg path:last-of-type {
